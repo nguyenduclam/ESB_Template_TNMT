@@ -1,0 +1,344 @@
+body {
+    font-family: Arial;
+    padding: 0;
+    overflow: hidden;
+}
+
+body:hover {
+    overflow-y: auto;
+}
+
+.orange {
+    color: orange;
+    font-size: 16px;
+    margin: -2px -2px 0px 0px;
+}
+
+.black {
+    color: #000;
+    font-weight: bold;
+}
+
+.blue {
+    color: #007bff;
+    font-size: 20px;
+    margin: -6px -2px 0px 0px;
+}
+
+.gray {
+    color: #8f8f8f;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bg-info {
+    border-radius: 30px 30px 0px 0px;
+    background-color: #6aa2d3 !important;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*** Custom Scrollbar if navbar have overflow ***/
+::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+/*** Custom Navbar ***/
+.navbar-backgound {
+    background-color: #abdeff;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.logo {
+    float: left;
+    margin-top: -20px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+}
+
+.title {
+    float: left;
+    margin-top: 10px;
+}
+
+#titlefont1 {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 3px 2px 2px #feffb3;
+    color: #0aa200;
+}
+
+#titlefont2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 3px 2px 2px #aaaaaa;
+    color: #ea6b48;
+}
+
+/*** Custom Navtab ***/
+.nav-main {
+    background-color: #b8f0c6;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.nav-main-titles {
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #4c4c4c;
+    text-transform: uppercase;
+}
+
+.nav-tabs .nav-main-titles:hover {
+    color: #da7942;
+    background-color: #97f0f6;
+    border: 1px solid #97f0f6;
+    border-radius: 15px;
+}
+
+.nav-tabs .nav-main-titles.active {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.nav-tabs .nav-main-titles:focus {
+    color: #fff;
+    background-color: #3982da;
+    border: 1px solid #3982da;
+    border-radius: 15px;
+}
+
+/*** Tab home ***/
+.home-titles {
+    color: #007bff;
+    font-family: Tahoma;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 18px;
+    margin-top: -4px;
+}
+
+/*** Footer Contents ***/
+.link-list {
+    color: #fff;
+    font-size: 16px;
+}
+
+.link-list_service {
+    font-size: 16px;
+}
+
+.link-list:hover, .link-list_service:hover {
+    color: #ff001e;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.hotline-symbol {
+    width: 240px;
+    height: 160px;
+}
+
+/*** Custom Input Choose Files ***/
+.file-upload {
+    display: block;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.file-upload .file-select {
+    display: block;
+    border: 2px solid #dce4ec;
+    color: #000;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    background: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+}
+
+.file-upload .file-select .file-select-button {
+    background: #dce4ec;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.file-upload .file-select .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.file-upload .file-select:hover {
+    border-color: #6aa2d3;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.file-upload .file-select:hover .file-select-button {
+    background: #6aa2d3;
+    color: #FFFFFF;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.file-upload.active .file-select {
+    border-color: #3fa46a;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.file-upload.active .file-select .file-select-button {
+    background: #3fa46a;
+    color: #FFFFFF;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.file-upload .file-select input[type=file] {
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.file-upload .file-select.file-select-disabled {
+    opacity: 0.65;
+}
+
+.file-upload .file-select.file-select-disabled:hover {
+    cursor: default;
+    display: block;
+    border: 2px solid #dce4ec;
+    color: #6aa2d3;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    text-align: left;
+    background: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+}
+
+.file-upload .file-select.file-select-disabled:hover .file-select-button {
+    background: #dce4ec;
+    color: #666666;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.file-upload .file-select.file-select-disabled:hover .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/*** Modal ***/
+h4 {
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #005cbf;
+    text-transform: uppercase;
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+#personal {
+    display: none;
+}
+
+.modal-header {
+    height: 50px;
+    cursor: move;
+    border-bottom: 1px solid #0099fa;
+}
+
+.modal-subheader {
+    cursor: move;
+    border-bottom: 1px solid #0099fa;
+}
+
+.modal-register {
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-header .close {
+    margin-top: -15px;
+}
+
+.modal-title {
+    float: left;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.modal-subtitle {
+    float: left;
+    margin-top: -5px;
+    padding-left: 16px;
+    line-height: 1.5;
+}
+
+/*** Datatables ***/
+table.dataTable thead .sorting::before,
+table.dataTable thead .sorting_asc::before,
+table.dataTable thead .sorting_asc::after {
+    display: none !important;
+}
+
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting_desc::after,
+table.dataTable thead .sorting_desc::before {
+    display: none !important;
+}

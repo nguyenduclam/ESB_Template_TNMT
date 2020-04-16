@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trục tích hợp ngành Tài nguyên và Môi trường</title>
+    <meta content="width=device-width, maximum-scale = 1, minimum-scale=1" name="viewport"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+
+    <!-- Favicon -->
+    <link href="assets/images/logo_tnmt.ico" rel="icon" type="image/x-icon"/>
+
+    <!-- Main CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome/styles.min.css" rel="stylesheet">
+    <link href="assets/css/icomoon/styles.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Datatables CSS -->
+    <link href="vendor/jquery/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Main JS -->
+    <script src="vendor/jquery/js/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/jquery/js/jquery.jeditable.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- Datatables JS -->
+    <script src="vendor/jquery/js/jquery.dataTables.min.js"></script>
+    <script src="vendor/bootstrap/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Datatables Plugin -->
+    <script src="assets/js/tables/datatables.min.js"></script>
+    <script src="assets/js/tables/extensions/responsive.min.js"></script>
+    <script src="assets/js/forms/selects/select2.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+</head>
+<body>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-backgound">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="assets/images/logo_tnmt.png">
+            <div class="title">
+                <div id="titlefont1">SỞ TÀI NGUYÊN VÀ MÔI TRƯỜNG - THÀNH PHỐ HỒ CHÍ MINH</div>
+                <div id="titlefont2">TRỤC TÍCH HỢP TÀI NGUYÊN - MÔI TRƯỜNG</div>
+            </div>
+        </a>
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse"
+                type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="login-btn">
+                        <i class="fa fa-user" style="font-size: 16px; margin-top: -4px"></i>
+                        &nbsp;&nbsp;Đăng nhập
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="register-btn">
+                        <i class="icon-blog" style="font-size: 16px; margin-top: -4px"></i>
+                        &nbsp;&nbsp;Đăng ký tài khoản
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container-fluid">
+    <div class="nav-main">
+        <ul class="nav nav-tabs justify-content-between" role="tablist">
+            <li>
+                <a class="nav-link nav-main-titles active" data-toggle="tab" href="#home">
+                    <i class="fa fa-home" style="margin-top: -4px"></i>
+                    <span class="">&nbsp;&nbsp;Trang chủ</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link nav-main-titles" data-toggle="tab" href="#services">
+                    <i class="icon-list"></i>
+                    <span class="">&nbsp;&nbsp;Danh mục dịch vụ</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link nav-main-titles" data-toggle="tab" href="#example">
+                    <i class="icon-newspaper2"></i>
+                    <span class="">&nbsp;&nbsp;Ví dụ</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link nav-main-titles" data-toggle="tab" href="#account">
+                    <i class="icon-profile"></i>
+                    <span class="-titles">&nbsp;&nbsp;Thông tin tài khoản</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link nav-main-titles" data-toggle="tab" href="#history">
+                    <i class="icon-history"></i>
+                    <span class="">&nbsp;&nbsp;Lịch sử truy cập</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+            <h5 class="my-4 home-titles">
+                GIỚI THIỆU CHUNG VỀ HỆ THỐNG TRỤC TÍCH HỢP WEB NGÀNH TÀI NGUYÊN VÀ MÔI TRƯỜNG THÀNH PHỐ HỒ CHÍ MINH
+            </h5>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="card h-100">
+                        <a href="#"><img alt="" class="card-img-top" src="assets/images/700x400.png"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <i class="icon-yelp card-icon"></i>
+                                <a href="#">Mục đích xây dựng</a>
+                            </h4>
+                            <p class="card-text">
+                                <b>Hệ thống trục tích hợp các dịch vụ Web Tài nguyên và Môi trường</b>
+                                được xây dựng nhằm cung cấp dữ liệu không gian địa lý thông qua
+                                các dịch vụ Web theo tiêu chuẩn mở quốc tế OGC WFS, WMS và WMTS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="card h-100">
+                        <a href="#"><img alt="" class="card-img-top" src="assets/images/700x400.png"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <i class="icon-accessibility card-icon"></i>
+                                <a href="#">Thực hiện</a>
+                            </h4>
+                            <p class="card-text">
+                                <b>Hệ thống trục tích hợp các dịch vụ Web Tài nguyên và Môi trường</b>
+                                được thực hiện theo Nghị định số 73/2017/NĐ-CP của Chính phủ ngày 14/06/2017 và
+                                Quyết định số 37/2018/QĐ-UBND ngày 9/10/2018 của Ủy ban Nhân dân TP.HCM
+                                Về thu thập, quản lý, khai thác và sử dụng thông tin, dữ liệu tài nguyên và môi trường.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="card h-100">
+                        <a href="#"><img alt="" class="card-img-top" src="assets/images/700x400.png"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <i class="fa fa-phone card-icon"></i>
+                                <a href="#">Chức năng</a>
+                            </h4>
+                            <p class="card-text">
+                                Các dịch vụ Web được <b>Hệ thống trục tích hợp các dịch vụ Web Tài nguyên và Môi
+                                trường</b>
+                                cung cấp có thể dễ dàng được sử dụng để phát triển các ứng dụng và sử dụng dữ liệu
+                                trên các môi trường khác nhau, như trên thiết bị di động thông minh, Web và các phần mềm
+                                GIS Destop.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="card h-100">
+                        <a href="#"><img alt="" class="card-img-top" src="assets/images/700x400.png"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <i class="icon-users card-icon"></i>
+                                <a href="#">Đối tượng</a>
+                            </h4>
+                            <p class="card-text">
+                                Trong giai đoạn này, <b>Hệ thống trục tích hợp các dịch vụ Web Tài nguyên và Môi
+                                trường</b>
+                                chỉ phục vụ nhu cầu về dữ liệu không gian địa lý cho các đơn vị trực thuộc
+                                Sở Tài nguyên và Môi trường Thành phố Hồ Chí Minh và phục vụ Sở Xây dựng,
+                                Sở Quy hoạch và Kiến trúc, Sở Giao thông Vận tải nếu có yêu cầu khai thác và sử dụng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="services">
+            <h5 class="my-4 home-titles">
+                DANH MỤC DỮ LIỆU TRÊN HỆ THỐNG TRỤC TÍCH HỢP CÁC DỊCH VỤ WEB TÀI NGUYÊN VÀ MÔI TRƯỜNG
+            </h5>
+            <div class="row justify-content-center">
+                <div class="my-auto col-md-10">
+                    <p class="my-4 card-text" style="margin-top: 0 !important;">
+                        Các dữ liệu tài không gian địa lý được cung cấp
+                        bởi hệ thống trục tích hợp các dịch vụ Web ngành tài nguyên và môi trường được
+                        phân thành 2 danh mục dữ liệu. Danh mục dữ liệu được truy cập và khám phá qua
+                        giao diện <b>GetCapabilities</b> của dịch vụ Web OGC WFS và OGC WMS.
+                        <b>Tên các lớp dữ liệu là giá trị trong thẻ &lt;Name&gt;.</b>
+                        Ví dụ: &lt;Name&gt;giaothong_ln&lt;/Name&gt;
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img alt="" class="card-img-top" src="assets/images/750x450.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Dữ liệu địa hình WFS</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Mô tả</h6>
+                            <p class="card-text">Danh mục dữ liệu địa hình được cung cấp theo chuẩn dịch vụ Web WFS</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text"><b>Đường dẫn đến danh mục</b></p>
+                            <a class="link-list_service" href=" http://120.72.116.160:7800/wfs_diahinh">
+                                http://120.72.116.160:7800/wfs_diahinh
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img alt="" class="card-img-top" src="assets/images/750x450.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Dữ liệu ranh thửa các cấp</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Mô tả</h6>
+                            <p class="card-text">Danh mục dữ liệu ranh thửa đất cấp xả,
+                                phường trên địa bàn Thành phố Hồ Chí Minh được cung cấp theo chuẩn dịch vụ Web WFS</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text"><b>Đường dẫn đến danh mục</b></p>
+                            <a class="link-list_service" href=" http://120.72.116.160:7800/wfs_diachinh_xaphuong">
+                                http://120.72.116.160:7800/wfs_diachinh_xaphuong</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img alt="" class="card-img-top" src="assets/images/750x450.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Dữ liệu địa hình WMS</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Mô tả</h6>
+                            <p class="card-text">Danh mục dữ liệu địa hình được cung cấp qua chuẩn dịch vụ Web WMS</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text"><b>Đường dẫn đến danh mục</b></p>
+                            <a class="link-list_service" href="http://120.72.116.160:7800/wfs_diahinh">
+                                http://120.72.116.160:7800/wfs_diahinh
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="example">
+        </div>
+        <div class="tab-pane" id="account">
+            <h5 class="my-4 home-titles">
+                THÔNG TIN TÀI KHOẢN
+            </h5>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 mb-4">
+                    <form action="" class="contact-form">
+                        <fieldset>
+                            <div class="form-group">
+                                <i class="icon-users2 blue"></i>
+                                <label class="gray" for="organ_pers">&nbsp;Loại thành viên</label>
+                                <select class="form-control">
+                                    <option selected value="">Tổ chức</option>
+                                    <option value="">Cá nhân</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-office blue"></i>
+                                <label class="gray" for="">&nbsp;Chọn tổ chức</label>
+                                <select class="form-control" id="">
+                                    <option selected value="">Sở Giao thông vận tải Thành phố Hồ Chí Minh</option>
+                                    <option value="">Sở Quy hoạch và Kiến trúc Thành phố Hồ Chí Minh</option>
+                                    <option value="">Sở Tài nguyên và Môi trường Thành phố Hồ Chí Minh</option>
+                                    <option value="">Sở Thông tin và Truyền thông Thành phố Hồ Chí Minh</option>
+                                    <option value="">Sở Xây dựng Thành phố Hồ Chí Minh</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-info22 blue"></i>
+                                <label class="gray" for="name">&nbsp;Họ và tên
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input class="form-control" id="name" placeholder="Họ và tên" required type="text">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-user blue"></i>
+                                <label class="gray" for="username_form">Tên đăng nhập
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input class="form-control" id="username_form" placeholder="Username" required type="text">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-user-lock blue"></i>
+                                <label class="gray" for="password_form">&nbsp;Mật khẩu
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input class="form-control" id="password_form" placeholder="Password" required
+                                       type="password">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-lock blue"></i>
+                                <label class="gray" for="">&nbsp;Nhập lại mật khẩu
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input class="form-control" id="" required type="password">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-location3 blue"></i>
+                                <label class="gray" for="">&nbsp;Địa chỉ
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input class="form-control" id="" placeholder="Địa chỉ" required type="text">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-phone blue"></i>
+                                <label class="gray" for="">&nbsp;Điện thoại
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input class="form-control" id="" placeholder="Số điện thoại" required type="tel">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-lock blue"></i>
+                                <label class="gray" for="">&nbsp;Điạ chỉ máy truy cập
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input class="form-control" id="" placeholder="Địa chỉ máy truy cập" required type="text">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-file-word blue"></i>
+                                <label class="gray" for="">&nbsp;Văn bản đính kèm</label>
+                                <div class="file-upload">
+                                    <div class="file-select">
+                                        <div class="file-select-button" id="fileName">Chọn file</div>
+                                        <div class="file-select-name" id="noFile">Chọn file...</div>
+                                        <input id="chooseFile" name="chooseFile" type="file">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="history">
+            <h5 class="my-4 home-titles">
+                LỊCH SỬ TRUY CẬP
+            </h5>
+            <div class="row justify-content-center">
+                <div class="col-lg-2 mb-4">
+                    <div class="form-group">
+                        <i class="icon-server blue"></i>
+                        <label class="gray" for="">&nbsp;Lớp dữ liệu</label>
+                        <select class="form-control">
+                            <option selected value="">Tổ chức</option>
+                            <option value="">Cá nhân</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <div class="form-group">
+                        <i class="icon-watch2 blue"></i>
+                        <label class="gray" for="">&nbsp;Thời gian</label>
+                        <select class="form-control">
+                            <option selected value="">Tổ chức</option>
+                            <option value="">Cá nhân</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <div class="form-group">
+                        <i class="icon-database-time2 blue"></i>
+                        <label class="gray" for="">&nbsp;Từ ngày</label>
+                        <input class="form-control" type="date"></input>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <div class="form-group">
+                        <i class="icon-database-time2 blue"></i>
+                        <label class="gray" for="">&nbsp;Đến ngày</label>
+                        <input class="form-control" type="date"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-2 mb-2">
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" id="" type="button" onclick="">
+                            <i class="icon-search4 blue" style="color: #fff"></i>
+                            <label class="gray" style="color: #fff; margin: 0">&nbsp;Tìm kiếm</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 row justify-content-center">
+                <div class="col-lg-10">
+                    <table id="table_history" class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr class="bg-primary text-white" role="row" style="text-align: center">
+                                <th>STT</th>
+                                <th>Tên đơn vị</th>
+                                <th>Tên dịch vụ</th>
+                                <th>Tên lớp</th>
+                                <th>Ngày truy cập</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- DOM dữ liệu cho từng tr, td, ở dưới đây là Demo-->
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                            </tr>
+                            <tr>
+                                <td>Cedric Kelly</td>
+                                <td>Senior Javascript Developer</td>
+                                <td>Edinburgh</td>
+                                <td>22</td>
+                                <td>2012/03/29</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                            </tr>
+                            <tr>
+                                <td>Cedric Kelly</td>
+                                <td>Senior Javascript Developer</td>
+                                <td>Edinburgh</td>
+                                <td>22</td>
+                                <td>2012/03/29</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                            </tr>
+                            <tr>
+                                <td>Cedric Kelly</td>
+                                <td>Senior Javascript Developer</td>
+                                <td>Edinburgh</td>
+                                <td>22</td>
+                                <td>2012/03/29</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="row">
+    <div class="col-lg-12 mb-auto"></div>
+</div>
+<footer class="py-3 bg-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-white">
+                <p class="my-2"><b>SỞ THÔNG TIN VÀ TRUYỀN THÔNG</b></p>
+                <ul>
+                    <li>
+                        <i class="icon-location4 card-icon"></i>
+                        &nbsp;&nbsp;59 Lý Tự Trọng, P. Bến Nghé, Quận 1, TPHCM
+                    </li>
+                    <li>
+                        <i class="fa fa-phone card-icon"></i>
+                        &nbsp;&nbsp;(028) 3520.2727 - (028) 3520.2323
+                    </li>
+                    <li>
+                        <i class="fa fa-fax card-icon"></i>
+                        &nbsp;&nbsp;(028) 3520.2424 - (028) 3930.9498
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope card-icon"></i>
+                        &nbsp;&nbsp;stttt@tphcm.gov.vn
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 text-white">
+                <p class="my-2"><b>CỔNG DỮ LIỆU</b></p>
+                <ul class="ml-0">
+                    <li class="">
+                        <i class="fa fa-users card-icon"></i>
+                        <a class="link-list" href="#" target="_blank">Người dân, doanh nghiệp</a>
+                    </li>
+                    <li class="">
+                        <i class="fa fa-building card-icon" style="margin-left: 3.5px; margin-right: 1px"></i>
+                        <a class="link-list" href="#" target="_blank">Cơ quan nhà nước</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 text-white" style="max-width: 50%; margin-left: -10%">
+                <div class="row">
+                    <div class="col-sm-8" style="margin-right: 10%">
+                        <p class="my-2"><b>ĐƠN VỊ HỖ TRỢ KỸ THUẬT</b></p>
+                        <a class="footer-support-link" href="https://hotro.tphcm.gov.vn/" target="_blank">
+                            <img src="assets/images/support_hotline.png" class="hotline-symbol">
+                        </a>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: -44%; margin-left: 65%; width: 100%;">
+                        <p class="my-2" style="width: 300px">
+                            <i class="icon-person card-icon"></i>
+                            <span><b>Anh Khánh</b></span>
+                            <br>
+                            <i class="icon-envelop4 card-icon"></i>
+                            <span>Email: <b>hoangtrongkhanh.it</b></span>
+                            <br>
+                            <i class="fa fa-phone card-icon"></i>
+                            <span>Số điện thoại: <b>0788950082</b></span>
+                        </p>
+                        <p class="my-1" style="width: 300px">
+                            <i class="icon-person card-icon"></i>
+                            <span><b>Anh Duy</b></span>
+                            <br>
+                            <i class="icon-envelop4 card-icon"></i>
+                            <span>Email: <b>el.pipita.cm@gmail.com</b></span>
+                            <br>
+                            <i class="fa fa-phone card-icon"></i>
+                            <span>Số điện thoại: <b>0913300922</b></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="text-white text-center footer-copyright">
+        <div>
+            © 2019 - Bản quyền sở hữu thuộc
+            <b>SỞ THÔNG TIN VÀ TRUYỀN THÔNG</b>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal Login -->
+<div class="modal fade" id="loginModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Đăng nhập</h4>
+                <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="contact-form">
+                    <fieldset>
+                        <div class="form-group">
+                            <i class="icon-user orange"></i>
+                            <label class="black" for="name">Tên đăng nhập</label>
+                            <input class="form-control" id="username" type="text">
+                        </div>
+                        <div class="form-group">
+                            <i class="icon-lock orange"></i>
+                            <label class="black" for="email">&nbsp;Mật khẩu</label>
+                            <input class="form-control" id="password" type="password">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal" type="submit">Login</button>
+                <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal Register -->
+<div class="modal fade" id="registerModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 0px">
+                <h4 class="modal-title">Đăng ký tài khoản</h4>
+                <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+            </div>
+            <div class="modal-subheader">
+                <h6 class="modal-subtitle">Lưu ý: Điền đầy đủ các thông tin có đánh dấu
+                    (<span style="color: red">*</span>)
+                </h6>
+            </div>
+            <div class="modal-body modal-register">
+                <form action="" class="contact-form">
+                    <fieldset>
+                        <div class="form-group">
+                            <i class="icon-users2 orange"></i>
+                            <label class="black" for="organ_pers">&nbsp;Loại thành viên</label>
+                            <select class="form-control" id="organ_pers">
+                                <option selected value="">Tổ chức</option>
+                                <option value="">Cá nhân</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="organization_type">
+                            <i class="icon-office orange"></i>
+                            <label class="black" for="">&nbsp;Chọn tổ chức</label>
+                            <select class="form-control" id="">
+                                <option selected value="">Sở Giao thông vận tải Thành phố Hồ Chí Minh</option>
+                                <option value="">Sở Quy hoạch và Kiến trúc Thành phố Hồ Chí Minh</option>
+                                <option value="">Sở Tài nguyên và Môi trường Thành phố Hồ Chí Minh</option>
+                                <option value="">Sở Thông tin và Truyền thông Thành phố Hồ Chí Minh</option>
+                                <option value="">Sở Xây dựng Thành phố Hồ Chí Minh</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="personal">
+                            <i class="icon-info22 orange"></i>
+                            <label class="black" for="name">&nbsp;Họ và tên
+                                <span style="color: red">*</span>
+                            </label>
+                            <input class="form-control" id="name" placeholder="Họ và tên" required type="text">
+                        </div>
+                        <div class="form-group">
+                            <i class="icon-user orange"></i>
+                            <label class="black" for="username_form">Tên đăng nhập
+                                <span style="color: red">*</span>
+                            </label>
+                            <input class="form-control" id="username_form" placeholder="Username" required type="text">
+                        </div>
+                        <div class="form-group">
+                            <i class="icon-user-lock orange"></i>
+                            <label class="black" for="password_form">&nbsp;Mật khẩu
+                                <span style="color: red">*</span>
+                            </label>
+                            <input class="form-control" id="password_form" placeholder="Password" required
+                                   type="password">
+                        </div>
+                        <div class="form-group">
+                            <i class="icon-lock orange"></i>
+                            <label class="black" for="">&nbsp;Nhập lại mật khẩu
+                                <span style="color: red">*</span>
+                            </label>
+                            <input class="form-control" id="" required type="password">
+                        </div>
+                        <div class="form-group">
+                            <i class="icon-location3 orange"></i>
+                            <label class="black" for="">&nbsp;Địa chỉ
+                                <span style="color: red">*</span>
+                            </label>
+                            <input class="form-control" id="" placeholder="Địa chỉ" required type="text">
+                        </div>
+                        <div class="form-group">
+                            <i class="icon-phone orange"></i>
+                            <label class="black" for="">&nbsp;Điện thoại
+                                <span style="color: red">*</span>
+                            </label>
+                            <input class="form-control" id="" placeholder="Số điện thoại" required type="tel">
+                        </div>
+                        <div class="form-group">
+                            <i class="icon-lock orange"></i>
+                            <label class="black" for="">&nbsp;Điạ chỉ máy truy cập
+                                <span style="color: red">*</span>
+                            </label>
+                            <input class="form-control" id="" placeholder="Địa chỉ máy truy cập" required type="text">
+                        </div>
+                        <div class="form-group">
+                            <i class="icon-file-word orange"></i>
+                            <label class="black" for="">&nbsp;Văn bản đính kèm</label>
+                            <div class="file-upload">
+                                <div class="file-select">
+                                    <div class="file-select-button" id="fileName">Chọn file</div>
+                                    <div class="file-select-name" id="noFile">Chọn file...</div>
+                                    <input id="chooseFile" name="chooseFile" type="file">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal" type="submit">Đăng ký</button>
+                <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
