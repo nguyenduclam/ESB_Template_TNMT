@@ -21,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/assets/js/main.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/assets/css/main.css" root0="SKIP_INSPECTION" />
@@ -28,6 +31,7 @@
     <setting file="file://$PROJECT_DIR$/README.md" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1aWISMqEB6JSd0CqEgwObGSgMar" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -57,7 +61,7 @@
       <workItem from="1586979458216" duration="43000" />
       <workItem from="1586979732796" duration="6000" />
       <workItem from="1587000548809" duration="20660000" />
-      <workItem from="1587025664699" duration="34899000" />
+      <workItem from="1587025664699" duration="35191000" />
     </task>
     <servers />
   </component>
