@@ -29,10 +29,6 @@ $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
     }
 });
 
-/*---- Code để DOM một Object nào đó đem vào đây ----*/
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-});
-
 /*---- Modal Examples ----*/
 $(".exp_1").click(function () {
     $("#exp_1").modal("show");
