@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6481270-26ae-425a-9744-8054af201017" name="Default Changelist" comment="" />
+    <list default="true" id="b6481270-26ae-425a-9744-8054af201017" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +45,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lottery_Web" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,21 +63,51 @@
       <workItem from="1586979458216" duration="43000" />
       <workItem from="1586979732796" duration="6000" />
       <workItem from="1587000548809" duration="20660000" />
-      <workItem from="1587025664699" duration="35191000" />
+      <workItem from="1587025664699" duration="35250000" />
+      <workItem from="1587074227203" duration="25000" />
+      <workItem from="1587074300083" duration="7511000" />
     </task>
+    <task id="LOCAL-00001" summary="ESB_template_TNMT">
+      <created>1587061125718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587061125718</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ESB_template_TNMT" />
+    <option name="LAST_COMMIT_MESSAGE" value="ESB_template_TNMT" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587061124638">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587061124638" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587033024771">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587033024771" />
-    <state x="277" y="59" key="SettingsEditor" timestamp="1586979486884">
+    <state x="277" y="59" key="SettingsEditor" timestamp="1587074315137">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1586979486884" />
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587074315137" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587061131442">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587061131442" />
+    <state x="444" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587074229971">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="444" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587074229971" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587081394036">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587081394036" />
   </component>
 </project>

@@ -1,11 +1,6 @@
 body {
     font-family: Arial;
     padding: 0;
-    overflow: hidden;
-}
-
-body:hover {
-    overflow-y: auto;
 }
 
 .orange {
@@ -41,9 +36,45 @@ ul {
     padding: 0;
 }
 
+/* Custom tag <hr> */
+.line-search {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #999;
+    color: #999;
+    text-align: center;
+}
+
+.line-search:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+
+/*** Custom Scrollbar if navbar have overflow ***/
 /*** Custom Scrollbar if navbar have overflow ***/
 ::-webkit-scrollbar {
-    width: 0 !important;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #fff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0aa200;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #abdeff;
 }
 
 /*** Custom Navbar ***/
@@ -125,6 +156,26 @@ ul {
 .card-icon {
     font-size: 18px;
     margin-top: -4px;
+}
+
+/*** Tab Example ***/
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
 }
 
 /*** Footer Contents ***/

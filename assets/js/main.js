@@ -1,3 +1,25 @@
+/*---- Modal Examples ----*/
+$(".exp_1").click(function () {
+    $("#exp_1").modal("show");
+    return false;
+});
+$(".exp_2").click(function () {
+    $("#exp_2").modal("show");
+    return false;
+});
+$(".exp_3").click(function () {
+    $("#exp_3").modal("show");
+    return false;
+});
+$(".exp_4").click(function () {
+    $("#exp_4").modal("show");
+    return false;
+});
+$(".exp_5").click(function () {
+    $("#exp_5").modal("show");
+    return false;
+});
+
 /*---- Modal Login ----*/
 $("#login-btn").click(function () {
     $("#loginModal").modal("show");
