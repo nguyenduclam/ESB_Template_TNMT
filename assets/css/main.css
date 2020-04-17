@@ -45,7 +45,7 @@ ul {
     overflow-x: hidden;
 }
 
-/* Custom tag <hr> */
+/*** Custom tag <hr> ***/
 .line-search {
     overflow: visible; /* For IE */
     padding: 0;
