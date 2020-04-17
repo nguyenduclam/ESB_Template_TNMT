@@ -5,12 +5,12 @@ $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
 
     if ($new_tab.index() < $old_tab.index()) {
         $old_tab.css('position', 'relative').css("right", "0").show();
-        $old_tab.animate({"right": "-100%"}, 300, function () {
+        $old_tab.animate({"right": "-100%"}, 500, function () {
             $old_tab.css("right", 0).removeAttr("style");
         });
     } else {
         $old_tab.css('position', 'relative').css("left", "0").show();
-        $old_tab.animate({"left": "-100%"}, 300, function () {
+        $old_tab.animate({"left": "-100%"}, 500, function () {
             $old_tab.css("left", 0).removeAttr("style");
         });
     }
