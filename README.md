@@ -5,4 +5,5 @@
 + Hide Scrollbar but still 
 being able to Scroll: https://www.geeksforgeeks.org/hide-scroll-bar-but-while-still-being-able-to-scroll-using-css/
 + Data Tables: https://datatables.net/
++ Animation Slides Tab: https://jsfiddle.net/ArtZ91/6c2Lz2r5/
 + Cổng dữ liệu TPHCM: https://data.hochiminhcity.gov.vn/

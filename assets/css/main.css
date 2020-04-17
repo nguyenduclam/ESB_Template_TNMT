@@ -40,6 +40,11 @@ ul {
     border-top: 2px solid #6aa2d3;
 }
 
+/*** Animation Slide ***/
+.container-fluid {
+    overflow-x: hidden;
+}
+
 /* Custom tag <hr> */
 .line-search {
     overflow: visible; /* For IE */
@@ -136,13 +141,8 @@ ul {
     border-radius: 15px;
 }
 
+.nav-tabs .nav-main-titles:focus,
 .nav-tabs .nav-main-titles.active {
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 15px;
-}
-
-.nav-tabs .nav-main-titles:focus {
     color: #fff;
     background-color: #3982da;
     border: 1px solid #3982da;
