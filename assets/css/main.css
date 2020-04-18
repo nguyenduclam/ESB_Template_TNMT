@@ -40,6 +40,12 @@ ul {
     border-top: 2px solid #6aa2d3;
 }
 
+/*** Check box ***/
+.form-check-label {
+    font-weight: bold;
+    color: #000;
+}
+
 /*** Animation Slide ***/
 .container-fluid {
     overflow-x: hidden;
@@ -94,9 +100,10 @@ ul {
 
 .logo {
     float: left;
-    margin-top: -20px;
-    width: 115px;
-    height: 115px;
+    margin-top: -2%;
+    margin-left: -12.5%;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
@@ -106,14 +113,14 @@ ul {
 }
 
 #titlefont1 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     text-shadow: 3px 2px 2px #feffb3;
     color: #0aa200;
 }
 
 #titlefont2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-shadow: 3px 2px 2px #aaaaaa;
     color: #ea6b48;

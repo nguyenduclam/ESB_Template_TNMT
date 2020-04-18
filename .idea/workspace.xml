@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6481270-26ae-425a-9744-8054af201017" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,9 @@
       <workItem from="1587074227203" duration="25000" />
       <workItem from="1587074300083" duration="18417000" />
       <workItem from="1587160420268" duration="3220000" />
-      <workItem from="1587163882246" duration="2998000" />
+      <workItem from="1587163882246" duration="3060000" />
+      <workItem from="1587167398920" duration="21000" />
+      <workItem from="1587171797899" duration="2988000" />
     </task>
     <task id="LOCAL-00001" summary="ESB_template_TNMT">
       <created>1587061125718</created>
@@ -127,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587164276512</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ESB_template_TNMT">
+      <created>1587166894837</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587166894837</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,26 +145,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="ESB_template_TNMT" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587164275673">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587166894107">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587164275673" />
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587166894107" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587033024771">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587033024771" />
-    <state x="277" y="59" key="SettingsEditor" timestamp="1587166881062">
+    <state x="277" y="59" key="SettingsEditor" timestamp="1587171924395">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587166881062" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587164291186">
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587171924395" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587166898306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587164291186" />
-    <state x="444" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587074229971">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587166898306" />
+    <state x="444" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587167412150">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="444" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587074229971" />
+    <state x="444" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587167412150" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1587164284611">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
