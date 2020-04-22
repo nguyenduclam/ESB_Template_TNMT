@@ -3,6 +3,14 @@ body {
     padding: 0;
 }
 
+p {
+    margin: 0;
+}
+
+.btn {
+    margin-top: 1%;
+}
+
 .orange {
     color: orange;
     font-size: 16px;
@@ -40,6 +48,12 @@ ul {
     border-top: 2px solid #6aa2d3;
 }
 
+.login-nav {
+    position: absolute;
+    margin-top: -0.5%;
+    margin-left: 70%;
+}
+
 /*** Check box ***/
 .form-check-label {
     font-weight: bold;
@@ -70,13 +84,6 @@ ul {
     padding: 0 0.25em;
     background: white;
 }
-
-/*** Over flow Slide
-#slide {
-    height: 800px;
-    overflow-y: auto;
-    overflow-x: hidden;
-} ***/
 
 /*** Custom Scrollbar if navbar have overflow ***/
 ::-webkit-scrollbar {
@@ -422,3 +429,30 @@ table.dataTable thead .sorting_desc::after,
 table.dataTable thead .sorting_desc::before {
     display: none !important;
 }
+
+
+/*** Reponsive ***/
+@media (min-width: 1366px) {
+    .logo {
+        margin-left: -25%;
+    }
+
+    .title {
+        margin-left: -10%;
+    }
+}
+
+@media (max-width: 1367px) {
+    .logo {
+        margin-left: -15%;
+    }
+
+    .title {
+        margin-left: 0%;
+    }
+
+    .login-nav {
+        margin-left: 75%;
+    }
+}
+

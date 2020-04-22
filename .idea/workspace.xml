@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6481270-26ae-425a-9744-8054af201017" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <workItem from="1587386819794" duration="3335000" />
       <workItem from="1587404117184" duration="152000" />
       <workItem from="1587428431016" duration="9635000" />
-      <workItem from="1587517640497" duration="1750000" />
+      <workItem from="1587517640497" duration="10517000" />
     </task>
     <task id="LOCAL-00001" summary="ESB_template_TNMT">
       <created>1587061125718</created>
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587519363837</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ESB_template_TNMT">
+      <created>1587519404961</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1587519404962</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,22 +192,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="ESB_template_TNMT" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587519363038">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587519403386">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587519363038" />
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587519403386" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587470650698">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587470650698" />
-    <state x="277" y="59" key="SettingsEditor" timestamp="1587519274830">
+    <state x="277" y="59" key="SettingsEditor" timestamp="1587519589130">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587519274830" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587519377316">
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587519589130" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587528325109">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587519377316" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587528325109" />
     <state x="444" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587167412150">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
