@@ -71,8 +71,13 @@ ul {
     background: white;
 }
 
+/*** Over flow Slide
+#slide {
+    height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+} ***/
 
-/*** Custom Scrollbar if navbar have overflow ***/
 /*** Custom Scrollbar if navbar have overflow ***/
 ::-webkit-scrollbar {
     width: 5px;
@@ -169,6 +174,12 @@ ul {
     margin-top: -4px;
 }
 
+.card-overflow {
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 /*** Tab Example ***/
 .social-link {
     width: 30px;
@@ -206,6 +217,7 @@ ul {
 }
 
 .hotline-symbol {
+    margin-left: -25%;
     width: 240px;
     height: 160px;
 }
@@ -373,6 +385,12 @@ button.close {
     height: 350px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+#navbarResponsive {
+    background-color: #97f0f6;
+    border-radius: 10px;
+    border: 1px solid #da7942;
 }
 
 .modal-header .close {

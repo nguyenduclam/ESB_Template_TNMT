@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b6481270-26ae-425a-9744-8054af201017" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lottery_Web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Atlas_VietNam" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -71,7 +73,10 @@
       <workItem from="1587167398920" duration="21000" />
       <workItem from="1587171797899" duration="4650000" />
       <workItem from="1587360595168" duration="1208000" />
-      <workItem from="1587386819794" duration="3137000" />
+      <workItem from="1587386819794" duration="3335000" />
+      <workItem from="1587404117184" duration="152000" />
+      <workItem from="1587428431016" duration="9635000" />
+      <workItem from="1587517640497" duration="1326000" />
     </task>
     <task id="LOCAL-00001" summary="ESB_template_TNMT">
       <created>1587061125718</created>
@@ -150,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587177220026</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ESB_template_TNMT">
+      <created>1587392948245</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587392948246</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,22 +173,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="ESB_template_TNMT" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587177219063">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587392947109">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587177219063" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587033024771">
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587392947109" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587470650698">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587033024771" />
-    <state x="277" y="59" key="SettingsEditor" timestamp="1587386900540">
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587470650698" />
+    <state x="277" y="59" key="SettingsEditor" timestamp="1587517684009">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587386900540" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587392939550">
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587517684009" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587392975606">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587392939550" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587392975606" />
     <state x="444" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587167412150">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
