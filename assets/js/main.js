@@ -29,6 +29,22 @@ $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
     }
 });
 
+/*---- Modal List Services ----*/
+$(".list-service-1").click(function () {
+    $("#list-service-1").modal("show");
+    return false;
+});
+
+$(".list-service-2").click(function () {
+    $("#list-service-2").modal("show");
+    return false;
+});
+
+$(".list-service-3").click(function () {
+    $("#list-service-3").modal("show");
+    return false;
+});
+
 /*---- Modal Examples ----*/
 $(".exp_1").click(function () {
     $("#exp_1").modal("show");

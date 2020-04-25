@@ -51,7 +51,7 @@ ul {
 .login-nav {
     position: absolute;
     margin-top: -0.5%;
-    margin-left: 70%;
+    margin-left: 65.65%;
 }
 
 /*** Check box ***/
@@ -182,7 +182,7 @@ ul {
 }
 
 .card-overflow {
-    height: 600px;
+    height: 700px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -400,6 +400,12 @@ button.close {
     border: 1px solid #da7942;
 }
 
+.table-content {
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 .modal-header .close {
     margin-top: -15px;
 }
@@ -452,7 +458,7 @@ table.dataTable thead .sorting_desc::before {
     }
 
     .login-nav {
-        margin-left: 75%;
+        margin-left: 67.55%;
     }
 }
 

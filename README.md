@@ -1,6 +1,7 @@
 # ESB Template Tài nguyên - Môi trường
 
 ### References
++ Trang gốc ESB: http://120.72.116.160:8080/
 + Custom Input Files: https://codepen.io/sazzad/pen/antDJ
 + Hide Scrollbar but still 
 being able to Scroll: https://www.geeksforgeeks.org/hide-scroll-bar-but-while-still-being-able-to-scroll-using-css/
@@ -13,3 +14,7 @@ being able to Scroll: https://www.geeksforgeeks.org/hide-scroll-bar-but-while-st
 + Phần "Ví dụ" và "Danh mục dịch vụ" thu nhỏ lại
 + Chỉnh sửa footer (Địa điểm, Hỗ trợ kỹ thuật và Bản quyền)
 + Thêm Scrollbar ở phần "Ví dụ" và "Danh mục dịch vụ"
++ Thu nhỏ khung hình và đẩy về bên trái
++ Thêm "Danh sách" của danh mục dũ liệu
++ Thay "Đường link thô" thành "Xem định dạng XML"
+
