@@ -126,6 +126,11 @@ $(".modal-header").on("mousedown", function (mousedownEvt) {
 /*---- Datables ----*/
 $(document).ready(function () {
     $('#table_history').dataTable({
+
+        scroller: true,
+        //scrollY: '50vh',
+        scrollCollapse: true,
+
         paging: true,
         autoWidth: false,
         "language": {

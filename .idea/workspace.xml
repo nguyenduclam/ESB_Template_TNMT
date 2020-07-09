@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6481270-26ae-425a-9744-8054af201017" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +28,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/assets/js/main.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/assets/css/main.css" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/README.md" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/assets/js/main.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1aWISMqEB6JSd0CqEgwObGSgMar" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,7 +44,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Atlas_VietNam" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -80,7 +77,13 @@
       <workItem from="1587428431016" duration="9635000" />
       <workItem from="1587517640497" duration="11020000" />
       <workItem from="1587784384372" duration="4800000" />
-      <workItem from="1587801537112" duration="4543000" />
+      <workItem from="1587801537112" duration="5722000" />
+      <workItem from="1587815118770" duration="76000" />
+      <workItem from="1588179641978" duration="2907000" />
+      <workItem from="1588217900658" duration="2075000" />
+      <workItem from="1588554879873" duration="2187000" />
+      <workItem from="1588642747458" duration="3298000" />
+      <workItem from="1593482894612" duration="2616000" />
     </task>
     <task id="LOCAL-00001" summary="ESB_template_TNMT">
       <created>1587061125718</created>
@@ -194,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587528333346</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ESB_template_TNMT">
+      <created>1587806107198</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1587806107198</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,22 +215,24 @@
     <option name="LAST_COMMIT_MESSAGE" value="ESB_template_TNMT" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587528332297">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1587806105984">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587528332297" />
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587806105984" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587470650698">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587470650698" />
-    <state x="277" y="59" key="SettingsEditor" timestamp="1587801554288">
+    <state x="246" y="22" key="SettingsEditor" timestamp="1593483099811">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1024.738@0.0.1536.834" timestamp="1588643303693" />
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1588217910125" />
+    <state x="246" y="22" key="SettingsEditor/1366.0.1366.738/0.0.1366.738@0.0.1366.738" timestamp="1593483099811" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587806118276">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="59" key="SettingsEditor/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587801554288" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587528337468">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587528337468" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1366.738@0.0.1536.834" timestamp="1587806118276" />
     <state x="444" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587167412150">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
